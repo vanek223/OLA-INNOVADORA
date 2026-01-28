@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роскошные апартаменты VIP класса - Ola Innovadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <h1><a href="index.html" style="color: white; text-decoration: none;" data-i18n="companyName">Ola Innovadora</a></h1>
+                </div>
+                <nav class="nav" id="mainNav">
+                    <a href="index.html" data-i18n="navApartments">Апартаменты</a>
+                    <a href="index.html#about" data-i18n="navAbout">О нас</a>
+                    <a href="index.html#contact" data-i18n="navContact">Связь</a>
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ru" onclick="changeLanguage('ru')">RU</button>
+                        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
+                        <button class="lang-btn" data-lang="es" onclick="changeLanguage('es')">ES</button>
+                    </div>
+                    <div class="mobile-language">
+                        <button class="mobile-lang-btn" onclick="toggleMobileLang()">
+                            <span id="currentLangMobile">RU</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="mobile-lang-dropdown" id="mobileLangDropdown">
+                            <button class="lang-btn active" data-lang="ru" onclick="changeLanguage('ru')">RU</button>
+                            <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
+                            <button class="lang-btn" data-lang="es" onclick="changeLanguage('es')">ES</button>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Apartment Details -->
+    <section class="apartment-details">
+        <div class="container">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> <span data-i18n="backLink">Вернуться к списку</span></a>
+            
+            <div class="apartment-detail-content">
+                <div class="apartment-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=1200&q=80" alt="Роскошные апартаменты VIP класса">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=400&q=80" alt="Вид 1" class="active">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80" alt="Вид 2">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=400&q=80" alt="Вид 3">
+                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=400&q=80" alt="Вид 4">
+                    </div>
+                </div>
+
+                <div class="apartment-detail-info">
+                    <div class="apartment-badge-detail">Премиум</div>
+                    <h1 data-i18n="apt3Name">Роскошные апартаменты VIP класса</h1>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="locationCostaAdeje">Коста-Адехе</span>, Tenerife</p>
+                    
+                    <div class="apartment-features-detail">
+                        <div class="feature-item">
+                            <i class="fas fa-bed"></i>
+                            <div>
+                                <strong data-i18n="bedrooms3">3 спальни</strong>
+                                <p data-i18n="featurePremiumInterior">Премиум интерьер</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <strong data-i18n="guests6">До 6 гостей</strong>
+                                <p data-i18n="featureIdealForCompany">Для большой компании</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-hot-tub"></i>
+                            <div>
+                                <strong data-i18n="jacuzzi">Джакузи</strong>
+                                <p data-i18n="featureOnTerrace">На террасе</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-water"></i>
+                            <div>
+                                <strong data-i18n="oceanView">Вид на океан</strong>
+                                <p data-i18n="featurePanoramicView">Панорамный вид</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apartment-description">
+                        <h2 data-i18n="description">Описание</h2>
+                        <p>Эксклюзивные апартаменты класса VIP в престижном районе Коста-Адехе с захватывающим видом на Атлантический океан. Роскошный интерьер, собственное джакузи на террасе и премиальные удобства создают идеальные условия для незабываемого отдыха.</p>
+                        
+                        <p>Апартаменты площадью 150 м² расположены в элитном жилом комплексе с консьерж-сервисом. Три просторные спальни, современная кухня, большая гостиная и две террасы с джакузи и обеденной зоной на свежем воздухе.</p>
+
+                        <h3 data-i18n="included">Что включено:</h3>
+                        <ul class="amenities-list">
+                            <li><i class="fas fa-check"></i> Джакузи на террасе с видом на океан</li>
+                            <li><i class="fas fa-check"></i> Полностью оборудованная премиум-кухня</li>
+                            <li><i class="fas fa-check"></i> Стиральная и посудомоечная машины</li>
+                            <li><i class="fas fa-check"></i> Кондиционеры во всех комнатах</li>
+                            <li><i class="fas fa-check"></i> Smart TV в каждой спальне</li>
+                            <li><i class="fas fa-check"></i> Высокоскоростной Wi-Fi</li>
+                            <li><i class="fas fa-check"></i> Две просторные террасы</li>
+                            <li><i class="fas fa-check"></i> Консьерж-сервис</li>
+                            <li><i class="fas fa-check"></i> Парковочное место в гараже</li>
+                            <li><i class="fas fa-check"></i> Доступ к бассейну и спа-зоне</li>
+                        </ul>
+
+                        <h3 data-i18n="location">Расположение:</h3>
+                        <p>Апартаменты расположены в элитном районе Коста-Адехе, рядом с лучшими пляжами, полем для гольфа и роскошными ресторанами. Коммерческий центр с бутиками и гастрономическими заведениями находится в пешей доступности.</p>
+                    </div>
+
+                    <div class="price-booking-section">
+                        <div class="price-detail">
+                            <span class="price-label">Цена за ночь</span>
+                            <span class="price-amount">€150</span>
+                        </div>
+                        <button class="book-btn-large" onclick="openBookingModal('Роскошные апартаменты VIP класса', '150')">
+                            <i class="fab fa-telegram"></i> Забронировать апартаменты
+                        </button>
+                        <p class="booking-note">Свяжитесь с нами для уточнения дат и деталей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviewsSection" data-apartment="apartment-3">
+        <div class="container">
+            <div class="reviews-header">
+                <h2 data-i18n="reviewsTitle">Отзывы гостей</h2>
+                <div class="reviews-stats">
+                    <div class="avg-rating">
+                        <span class="rating-number" id="avgRating">0</span>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <span class="review-count">(<span id="reviewCount">0</span> отзывов)</span>
+                </div>
+            </div>
+
+            <!-- Reviews List -->
+            <div id="reviewsList"></div>
+
+            <!-- Add Review Form -->
+            <div class="review-form">
+                <h3 data-i18n="leaveReview">Оставьте свой отзыв</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="reviewName" data-i18n="yourName">Ваше имя *</label>
+                        <input type="text" id="reviewName" required placeholder="Введите ваше имя" data-i18n-placeholder="yourNamePlaceholder">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="rating">Оценка *</label>
+                        <div class="rating-stars">
+                            <input type="radio" name="rating" value="5" id="star5">
+                            <label for="star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rating" value="4" id="star4">
+                            <label for="star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rating" value="3" id="star3">
+                            <label for="star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rating" value="2" id="star2">
+                            <label for="star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" name="rating" value="1" id="star1">
+                            <label for="star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewText" data-i18n="yourReview">Ваш отзыв *</label>
+                        <textarea id="reviewText" required placeholder="Расскажите о вашем опыте..." data-i18n-placeholder="reviewPlaceholder" minlength="10"></textarea>
+                    </div>
+                    <button type="submit" class="submit-review-btn" data-i18n="submitReview">Отправить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Тенерифе Апартаменты. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal()">&times;</span>
+            <h2>Забронировать апартаменты</h2>
+            <div class="modal-apartment-info" id="modalApartmentInfo"></div>
+            <p class="modal-description">Для бронирования свяжитесь с нами через удобный для вас мессенджер:</p>
+            <div class="modal-social-links">
+                <a href="https://t.me/yourusername" target="_blank" class="social-btn telegram">
+                    <i class="fab fa-telegram"></i>
+                    <span>Написать в Telegram</span>
+                </a>
+                <a href="https://wa.me/yourphone" target="_blank" class="social-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Написать в WhatsApp</span>
+                </a>
+            </div>
+            <p class="modal-note">Упомяните название апартаментов при обращении</p>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Gallery functionality
+        const thumbnails = document.querySelectorAll('.thumbnail-images img');
+        const mainImage = document.querySelector('.main-image img');
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                thumbnails.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                mainImage.src = this.src.replace('w=400', 'w=1200');
+            });
+        });
+        
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+        
+        // Mobile language dropdown toggle
+        function toggleMobileLang() {
+            const dropdown = document.getElementById('mobileLangDropdown');
+            dropdown.classList.toggle('active');
+        }
+        
+        // Initialize page with current language on load
+        document.addEventListener('DOMContentLoaded', function() {
+            updatePageContent();
+            updateMobileLangButton();
+        });
+        
+        // Close mobile language dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('mobileLangDropdown');
+            const langBtn = document.querySelector('.mobile-lang-btn');
+            if (dropdown && !dropdown.contains(event.target) && !langBtn.contains(event.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+    <script src="reviews.js"></script>
+</body>
+</html>
